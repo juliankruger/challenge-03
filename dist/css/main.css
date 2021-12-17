@@ -101,14 +101,14 @@ li {
   color: #969696;
 }
 .card__user-info__location {
-  padding: 0.8em;
+  padding: 0.5em;
   color: #969696;
 }
 .card__user-stats {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 1.5em 2em;
+  padding: 1em 2em 1.2em;
 }
 .card__user-stats li:first-of-type {
   padding-left: 3em;

@@ -85,7 +85,7 @@ li {
     }
 
     &__location {
-      padding: 0.8em;
+      padding: 0.5em;
       color: variables.$neutral-dark-gray;
     }
   }
@@ -94,7 +94,7 @@ li {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 1.5em 2em;
+    padding: 1em 2em 1.2em;
 
     & li:first-of-type {
       padding-left: 3em;
