@@ -1,0 +1,133 @@
+/* Fonts */
+/* Colors */
+/* Backgrounds */
+.footer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1em 0;
+  gap: 0.5em;
+  color: white;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+.footer__link, .footer__link:visited {
+  color: #2d3248;
+}
+.footer__link:hover, .footer__link:focus, .footer__link:active {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #19a2ae;
+  background-image: url("../../images/bg-pattern-top.svg"), url("../../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-size: max(60vw, 100vh);
+  background-position: bottom 40vh right 50vw, top 50vh left 50vw;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90%;
+  width: 340px;
+  background-color: white;
+  font-family: "Kumbh Sans", sans-serif;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.card hr {
+  width: 100%;
+  border-top: 0.5px;
+  color: #6a6f81;
+  opacity: 0.2;
+}
+.card__hero {
+  width: 100%;
+  height: 140px;
+  background-image: url("../../images/bg-pattern-card.svg");
+  background-size: 340px 140px;
+  background-attachment: fixed;
+}
+.card__hero__img {
+  position: relative;
+  border-radius: 100%;
+  border: 5px solid white;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.card__user-info {
+  padding: 4.5em 0 0.5em;
+  text-align: center;
+}
+.card__user-info__name {
+  display: inline;
+  padding: 0.5em;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #2d3248;
+}
+.card__user-info__age {
+  display: inline;
+  color: #969696;
+}
+.card__user-info__location {
+  padding: 0.8em;
+  color: #969696;
+}
+.card__user-stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 2em;
+}
+.card__user-stats li:first-of-type {
+  padding-left: 3em;
+}
+.card__user-stats li:last-of-type {
+  padding-right: 3em;
+}
+.card__user-stats__stat {
+  list-style: none;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.card__user-stats__stat--highlighted {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #2d3248;
+}
+.card__user-stats__stat--tiny {
+  font-size: 0.7rem;
+  color: #969696;
+}
+
+/*# sourceMappingURL=main.css.map */
