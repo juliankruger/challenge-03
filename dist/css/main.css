@@ -13,6 +13,7 @@
   font-family: "Kumbh Sans", sans-serif;
   border-radius: 15px;
   overflow: hidden;
+  box-shadow: 0 4px 30px -15px #2d3248;
 }
 .card hr {
   width: 100%;
