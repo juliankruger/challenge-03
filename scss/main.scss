@@ -1,3 +1,4 @@
+@use "card";
 @use "footer";
 @use "variables";
 
@@ -29,96 +30,5 @@ li {
   background-size: variables.$background-size;
   background-position: variables.$background-position-top,
     variables.$background-position-bottom;
-}
-
-.card {
-  margin: 2em auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 90%;
-  width: 340px;
-  background-color: variables.$neutral-bg;
-  font-family: variables.$primary-font;
-  border-radius: 15px;
-  overflow: hidden;
-
-  hr {
-    width: 100%;
-    border-top: 0.5px;
-    color: variables.$primary-grayish-blue;
-    opacity: 0.2;
-  }
-
-  &__hero {
-    width: 100%;
-    height: 140px;
-    background-image: url("../../images/bg-pattern-card.svg");
-    background-size: 340px 140px;
-    background-attachment: fixed;
-
-    &__img {
-      position: relative;
-      border-radius: 100%;
-      border: 5px solid variables.$neutral-bg;
-      top: 100%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-    }
-  }
-
-  &__user-info {
-    padding: 4.5em 0 0.5em;
-    text-align: center;
-
-    &__name {
-      display: inline;
-      padding: 0.5em;
-      font-size: 1.125rem;
-      font-weight: 700;
-      color: variables.$primary-dark-blue;
-    }
-
-    &__age {
-      display: inline;
-      color: variables.$neutral-dark-gray;
-    }
-
-    &__location {
-      padding: 0.5em;
-      color: variables.$neutral-dark-gray;
-    }
-  }
-
-  &__user-stats {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 1em 2em 1.2em;
-
-    & li:first-of-type {
-      padding-left: 3em;
-    }
-
-    & li:last-of-type {
-      padding-right: 3em;
-    }
-
-    &__stat {
-      list-style: none;
-      text-align: center;
-      letter-spacing: 1px;
-
-      &--highlighted {
-        font-size: 1.125rem;
-        font-weight: 700;
-        color: variables.$primary-dark-blue;
-      }
-
-      &--tiny {
-        font-size: 0.7rem;
-        color: variables.$neutral-dark-gray;
-      }
-    }
-  }
+  z-index: 2;
 }
